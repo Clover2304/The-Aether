@@ -27,4 +27,4 @@ jobs:
       if: always()
       with:
         name: Aether-CI-116x
-        path: target/*.jar
+        path: ./build/libs

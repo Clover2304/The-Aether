@@ -22,8 +22,9 @@ jobs:
         if [ "${{ github.event.sender.login }}" = "OscarPayn" ] || [ "${{ github.event.sender.login }}" = "Clover2304" ]; then
           gradle build
         fi
-        uses: actions/upload-artifact@master
-        if: always()
-        with:
-          name: Aether-CI
-          path: ${{ github.workspace }}/app/build/outputs/apk/release
+    - name: Upload
+      uses: actions/upload-artifact@master
+      if: always()
+      with:
+        name: Aether-CI-116x
+        path: ${{ github.workspace }}/app/build/outputs/apk/release

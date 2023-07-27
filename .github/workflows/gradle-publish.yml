@@ -1,4 +1,4 @@
-name: Publish to CurseForge
+name: Publish to GitActions
 
 on: 
   workflow_dispatch
